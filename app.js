@@ -151,10 +151,10 @@ app.get("/accounts", function(request, response){
 //   });
 // });
 
-// // This is for serving files in the static directory
-// app.get("/static/:staticFilename", function (request, response) {
-//     response.sendfile("static/" + request.params.staticFilename);
-// });
+// This is for serving files in the static directory
+app.get("/static/:staticFilename", function (request, response) {
+    response.sendfile("static/" + request.params.staticFilename);
+});
 
 function initServer() {
   // When we start the server, we must load the stored data
