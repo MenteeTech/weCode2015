@@ -67,6 +67,22 @@ app.get("/accounts", function(request, response){
   });
 });
 
+app.get("/addaccount", function(){
+  fs.readFile("static/SignUpForm.html", function(err, source){
+      if(err){
+        response.send("error");
+      }
+      var template = Handlebars.compile(source.toString());
+      var data = {};
+      var result = template(data);
+      response.send(result);
+  });
+});
+
+app.post("/addaccount", function(){
+  response.send("account added!");
+});
+
 // get one item
 // app.get("/listings/:id", function(request, response){
 //   var id = request.params.id;
