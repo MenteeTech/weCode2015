@@ -117,3 +117,10 @@ li {
   background-color: #FFA900;
 }
 
+#results-map {
+    height: 400px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+  }
+
