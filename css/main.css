@@ -5,9 +5,16 @@ body {
 }
 
 ul {
+    padding: 0;
     list-style-type: none;
+}
+
+li.icon {
     display: inline;
-    float: left;
+}
+
+li.icon img {
+    width: 30px;
 }
 
 .container {
@@ -24,3 +31,90 @@ ul {
     background-color: #000;
     color: #fff;
 }
+
+
+
+
+
+
+
+body{background-image:url(mentoring.jpg);}
+   #header{
+   background-repeat:repeat-y;
+       color:#fff;
+       text-align:center;
+       padding:5px;
+       position:static;
+}
+#nav{
+   line-height:30px;
+       background-color:#eeeeee ;
+       top:45px;
+       height:600px;
+       width:100px;
+       float:left;
+       padding:5px;
+       position:inherit;
+       position:static;
+   }
+   #footer{
+   background-image:url(zen.jpg);
+       background-repeat:repeat-y;
+       color:black;
+       text-align:center;
+       padding:5px;
+       position:inherit;
+}
+h1{
+color:black;
+   font-family:ubuntu;
+       font-size:18px;
+       text-align:center;
+   font-weight:bold;
+    position:static;
+       top:55px;
+       left:600px;
+   }
+   h2{
+       color:black;
+       font-family:cursive;
+       font-weight:500;
+       font-size:25px;
+   text-align:center;
+}
+   h3{
+   color:#fff;
+       font-family:sans-serif;
+       text-align:right;
+       position:static;
+       top:50px;
+       left:250px;
+       margin:120px;
+       font-size:18px;
+
+
+
+img{
+       position:absolute;
+       left:150px;
+       top:200px;
+       z-index:0;
+       }
+p{
+       color:#fff;
+       font-family:fantasy;
+       border:1px solid white;
+       padding:20px;
+       margin:20px;
+       font-size:20px;
+   }
+   footer{
+   color:black;
+       font-family:sans-serif;
+       text-align:center;
+       position:static;
+       bottom:200px;
+       left:300px;
+       margin:120px;
+       font-size:18px;
+       border-bottom-color:black;
