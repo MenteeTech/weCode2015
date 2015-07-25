@@ -40,10 +40,23 @@ function writeFile(filename, data, callbackFn) {
   });
 }
 
+// homepage
+app.get("/", function(request, response){
+  fs.readFile("static/index.html", function(err, source){
+      if(err){
+        response.send("error");
+      }
+      var template = Handlebars.compile(source.toString());
+      var data = {};
+      var result = template(data);
+      response.send(result);
+  });
+})
+
 // get all items
 app.get("/accounts", function(request, response){
   // var source = "{{listings}}";//read html file
-  fs.readFile("static/index.html", function(err, source){
+  fs.readFile("static/results.html", function(err, source){
       if(err){
         response.send("error");
       }
