@@ -60,6 +60,9 @@ app.get("/accounts", function(request, response){
       if(err){
         response.send("error");
       }
+      for(var i = 0; i < accounts.length; i++){
+        accounts[i].linkedInLink = "https://www.linkedin.com/profile/view?id=" + accounts[i].linkedInId;
+      }
       var template = Handlebars.compile(source.toString());
       var data = {accounts: accounts, success: true};
       var result = template(data);
@@ -81,6 +84,13 @@ app.get("/addaccount", function(request, response){
 
 app.post("/addaccount", function(request, response){
   response.send("account added!");
+});
+
+app.get("/linkedinAPI", function(request, response){
+  var id = request.query.id;
+  var data = {link: "https://www.linkedin.com/profile/view?id=204157517"};
+  // var result = template(data);
+  response.send(data);
 });
 
 // get one item
@@ -176,7 +186,7 @@ function initServer() {
   // When we start the server, we must load the stored data
   var defaultList = "[]";
   readFile("data.txt", defaultList, function(err, data) {
-    listings = JSON.parse(data);
+    accounts = JSON.parse(data);
   });
 }
 

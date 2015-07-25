@@ -2,7 +2,7 @@
 		{
 			"name": "Suzie Programmer",
 			"type": "mentor",
-			"linkedInId": 100,
+			"linkedInId": 204157517,
 			"location": "portland, OR",
 			"gender": "woman",
 			"race": "latina",
@@ -12,7 +12,7 @@
 		{
 			"name": "Daisy Programmer",
 			"type": "mentee",
-			"linkedInId": 101,
+			"linkedInId": 204157517,
 			"location": "portland, OR",
 			"gender": "woman",
 			"race": "white",
