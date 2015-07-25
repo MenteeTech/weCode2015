@@ -26,6 +26,26 @@ li.icon img {
     /*border: solid 1px #000;*/
 }
 
+#header{
+    background-repeat:repeat-y;
+    color:#fff;
+    text-align:center;
+    padding:5px;
+    position:static;
+}
+
+#nav{
+    line-height:30px;
+    background-color:#eeeeee ;
+    top:45px;
+    height:600px;
+    width:100px;
+    float:left;
+    padding:5px;
+    position:inherit;
+    position:static;
+}
+
 #footer {
     width: 100%;
     background-color: #000;
@@ -38,7 +58,7 @@ li.icon img {
 
 
 
-body{background-image:url(mentoring.jpg);}
+/*body{background-image:url(mentoring.jpg);}
    #header{
    background-repeat:repeat-y;
        color:#fff;
@@ -117,4 +137,4 @@ p{
        left:300px;
        margin:120px;
        font-size:18px;
-       border-bottom-color:black;
+       border-bottom-color:black;*/
