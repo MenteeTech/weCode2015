@@ -1,41 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="reset.css" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
+	<head>
+		<title>MenteeTech</title>
+
+<!-- Pull in CDN References -->
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+		<link rel='stylesheet' href='css/main.css'>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+		<script src='app.js'></script>
+
+<!-- Pull in local file sets just in case. Also include .js files and jQuery at end of body-->
+	<!--
+	<link rel='stylesheet' href='css/bootstrap.min.css'>
+	<link rel='stylesheet' href='css/bootstrap-theme.min.css'>
+	-->
+
+	</head>
+	<body>
+		<div class='container'>
+			<div class='row'>
+				<nav>
+				</nav>
+				<!-- <h1>
+					MenteeTech
+				</h1> -->
+				<img src='img/slide1.jpg'>
+			</div>
+			<div class='row'>
+				<div class='col-md-4 portal' id='about'>
+					<h2>About</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus nibh in nisl vestibulum, sed aliquet orci maximus. Vivamus porta faucibus cursus. Aliquam bibendum interdum felis.
+					</p>
+				</div>
+				<div class='col-md-4 portal' id='find'>
+					<h2>Find a Connection</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus nibh in nisl vestibulum, sed aliquet orci maximus. Vivamus porta faucibus cursus. Aliquam bibendum interdum felis.
+					</p>
+				</div>
+				<div class='col-md-4 portal' id='become'>
+					<h2>Become a Mentor/Mentee</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus nibh in nisl vestibulum, sed aliquet orci maximus. Vivamus porta faucibus cursus. Aliquam bibendum interdum felis.
+					</p>
+				</div>
+			</div>
+			<div class='row' id='footer'>
+				<div id='icons'>
+					<ul>
+				        <li>
+							<a href="mail.png"><img src="/img/icons/mail_360.png" alt="Mail Logo"></a>
+						</li>
+				        <li>
+							<a href="facebook.com"><img src="/img/icons/facebook-wrap_360.png" alt="Facebook Logo"></a>
+						</li>
+				         <li>
+							<a href="twitter-wrap.png"><img src="/img/icons/twitter-wrap_360.png" alt="TwitterLogo"></a>
+						</li>
+		            </ul>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
 
 
-    <div class="wrapper">
-      <div id="header">
-          <h1>Apparel Store</h1>
-      </div>
-
-      <div id="apparel-listing">
-        <p>Create a New Listing</p>
-        <form name="myform" action="javascript:addListing()">
-          <div class="row">
-            <label>Author:</label>  <input id="author-input" name="Author" type="text" placeholder="Puppet"/> 
-          </div>
-          <div class="row">
-            <label>Description:</label>  <input id="desc-input" name="Desc" type="text" placeholder="purple"/>
-          </div>
-          <div class="row">
-            <label>Price:</label>  <input id="price-input" name="Price" type="text" placeholder="23.70"/>
-          </div>
-          <div class="row right">
-            <input id="submitButton" name="Submit"  type="submit" value="Add Listing"/>
-          </div>
-        </form>
-      </div>
-
-      <ul class="listings"></ul>
-
-    </div>
 
 
-	<script src="jquery-1.9.0.js"></script>
-	<script src="listings.js"></script>
-	</body>
+<!-- If using local bootstrap instead of CDN -->
+	<!--
+	<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+	<script src='js/npm.js'></script>
+	-->
+</body>
 </html>
