@@ -15,15 +15,14 @@
 	<body>
 		<div>
 			<h1>Mentor Search Results</h1>
-			<script id="t" type="text/x-handlebars">
 			<div>
 				<img>
 				<h3 class='mentor-name'>Susie Programmer<h3>
 				<p>
 					<ul>
-						<li>Gender: \{{accounts.gender}}</li>
-						<li>Race: \{{accounts.race}}</li>
-						<li>Barrier Assistance I Can Provide: \{{accounts.barrierAssistance}}</li>
+						<li>Gender: {{accounts.0.gender}}</li>
+						<li>Race: {{accounts.0.race}}</li>
+						<li>Barrier Assistance I Can Provide: {{accounts.0.barrierAssistance}}</li>
 					</ul>
 				</p>
 				<p class='skills-list'>
@@ -37,50 +36,16 @@
 						<li>Resume & Portfolio Building</li>
 					</ul>
 				</p>
-				<div class='linkedin' href='\{{accounts.linkedInLink}}'><button>LinkedIn</button></div>
+				<div class='linkedin' href='{{accounts.0.linkedInLink}}'><button>LinkedIn</button></div>
 			</div>
-			</script>
-			<script id="t" type="text/x-handlebars">
-    \{{#times 10}}
-        <span>\{{this}}</span>
-    \{{/times}}
-    <hr>
-    \{{#for 0 10 2}}
-        <span>\{{this}}</span>
-    \{{/for}}
-</script>
-			<div>
-				<img>
-				<h3 class='mentor-name'>Diversity Dave<h3>
-				<p>
-					<ul>
-						<li>Gender: #gender#</li>
-						<li>Race: #race#</li>
-						<li>Barrier Assistance I Can Provide: #barriers#</li>
-					</ul>
-				</p>
-				<p class='skills-list'>
-					<ul class='skills-header'>Technical Skills
-						<li>HTML/CSS</li>
-						<li>JavaScript</li>
-						<li>Angular</li>
-					</ul>
-					<ul class='skills-header'>Softskills
-						<li>Interviewing</li>
-						<li>Resume & Portfolio Building</li>
-					</ul>
-				</p>
-				<div class='linkedin' href='#linkedin#'><button>LinkedIn</button></div>
-			</div>
-
 			<div>
 				<img>
 				<h3 class='mentor-name'>Susie Programmer<h3>
 				<p>
 					<ul>
-						<li>Gender: #gender#</li>
-						<li>Race: #race#</li>
-						<li>Barrier Assistance I Can Provide: #barriers#</li>
+						<li>Gender: {{accounts.1.gender}}</li>
+						<li>Race: {{accounts.1.race}}</li>
+						<li>Barrier Assistance I Can Provide: {{accounts.1.barrierAssistance}}</li>
 					</ul>
 				</p>
 				<p class='skills-list'>
@@ -94,7 +59,7 @@
 						<li>Resume & Portfolio Building</li>
 					</ul>
 				</p>
-				<div class='linkedin' href='#linkedin#'><button>LinkedIn</button></div>
+				<div class='linkedin' href='{{accounts.1.linkedInLink}}'><button>LinkedIn</button></div>
 			</div>
 
 			<div id="results-map">
