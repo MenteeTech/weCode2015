@@ -1,13 +1,23 @@
-{ 
-	accounts: [
-		{name: "Suzie Programmer",
-		type: "mentor",
-		linkedInId: 100,
-		location: "portland, OR",
-		gender: "woman",
-		race: "latina",
-		skills: ["HTML/CSS"],
-		barrierAssistance: [""]}
-	]
+[
+		{
+			"name": "Suzie Programmer",
+			"type": "mentor",
+			"linkedInId": 100,
+			"location": "portland, OR",
+			"gender": "woman",
+			"race": "latina",
+			"skills": ["HTML/CSS"],
+			"barrierAssistance": [""]
+		},
+		{
+			"name": "Daisy Programmer",
+			"type": "mentee",
+			"linkedInId": 101,
+			"location": "portland, OR",
+			"gender": "woman",
+			"race": "white",
+			"skills": ["HTML/CSS"],
+			"barrierAssistance": ["transportation"]
+		}
+]
 
-}
