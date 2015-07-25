@@ -67,7 +67,7 @@ app.get("/accounts", function(request, response){
   });
 });
 
-app.get("/addaccount", function(){
+app.get("/addaccount", function(request, response){
   fs.readFile("static/SignUpForm.html", function(err, source){
       if(err){
         response.send("error");
@@ -79,7 +79,7 @@ app.get("/addaccount", function(){
   });
 });
 
-app.post("/addaccount", function(){
+app.post("/addaccount", function(request, response){
   response.send("account added!");
 });
 
